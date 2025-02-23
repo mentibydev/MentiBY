@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Topics</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #000000;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1E1E1E;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1E1E1E;
+            min-width: 200px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .user-profile {
+            background-color: #333;
+            padding: 12px 12px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        .content-section {
+            padding: 40px;
+        }
+
+        /* Grid Layout with 3 Columns */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Ensures 3 columns per row */
+            gap: 20px;
+        }
+
+        .blog-card {
+            background-color: #1E1E1E;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .blog-card h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .blog-card p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .tags {
+            margin: 10px 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #444;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+        .view-posts {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .view-posts:hover {
+            background-color: #ddd;
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 900px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .blog-grid {
+                grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="page-1737902127916.html">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="internship.html">Internships</a></li>
+                <li><a href="mentorship.html">Mentorship</a></li>
+                
+                <!-- Events Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Events</a>
+                    <div class="dropdown-content">
+                        <a href="hackthons.html" onclick="showSection('hackathons')">Hackathons</a>
+                        <a href="competetion.html" onclick="showSection('competitions')">Competitions</a>
+                        <a href="workshop.html" onclick="showSection('workshops')">Workshops</a>
+                        <!-- <a href="#" onclick="showSection('conferences')">Conferences</a> -->
+                    </div>
+                </li>
+
+                <!-- Resources Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Resources</a>
+                    <div class="dropdown-content">
+                        <a href="companywisequestion.html" onclick="showSection('company-questions')">Company-wise Questions</a>
+                        <a href="#" onclick="showSection('career-roadmaps')">Career Roadmaps</a>
+                        <a href="#" onclick="showSection('interview-prep')">Interview Preparation</a>
+                        <a href="#" onclick="showSection('tech-trends')">Tech Trends</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-profile">US</div>
+    </header>
+
+    <main>
+        <section id="blogs" class="content-section">
+            <h1>Blog Topics</h1>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <h2>Web Development Fundamentals</h2>
+                    <p>Essential concepts and technologies for web development</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <p>10 posts in this topic</p>
+                    <button class="view-posts">View Posts</button>
+                </div>
+
+                <div class="blog-card">
+                    <h2>Frontend Frameworks</h2>
+                    <p>Modern JavaScript frameworks for building user interfaces</p>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Vue</span>
+                        <span class="tag">Angular</span>
+                    </div>
+                    <p>8 posts in this topic</p>
+                    <button class="view-posts">View Posts</button>
+                </div>
+
+                <div class="blog-card">
+                    <h2>Backend Development</h2>
+                    <p>Server-side programming and database management</p>
+                    <div class="tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Databases</span>
+                    </div>
+                    <p>12 posts in this topic</p>
+                    <button class="view-posts">View Posts</button>
+                </div>
+
+                <div class="blog-card">
+                    <h2>DevOps and Deployment</h2>
+                    <p>Continuous integration, delivery, and cloud platforms</p>
+                    <div class="tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                    <p>6 posts in this topic</p>
+                    <button class="view-posts">View Posts</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

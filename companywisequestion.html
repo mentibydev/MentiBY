@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Interview Questions</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1E1E1E;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1E1E1E;
+            min-width: 200px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .user-profile {
+            background-color: #333;
+            padding: 12px 12px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        .content-section {
+            padding: 40px 40px 40px;
+            text-align: left;
+        }
+
+        .search-bar {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            width: 30%;
+            border: 1px solid #444;
+            background-color: #222;
+            color: white;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .search-bar button {
+            padding: 10px;
+            margin-left: 10px;
+            border: none;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .search-bar button:hover {
+            background-color: #ddd;
+        }
+
+        .company-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .company-card {
+            background-color: #1E1E1E;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .company-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        .company-card h2 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Interview Questions Modal */
+        .details-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .details-content {
+            background: #1E1E1E;
+            padding: 30px;
+            border-radius: 10px;
+            width: 50%;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .close-btn {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="page-1737902127916.html">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="internship.html">Internships</a></li>
+                <li><a href="mentorship.html">Mentorship</a></li>
+                
+                <!-- Events Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Events</a>
+                    <div class="dropdown-content">
+                        <a href="hackthons.html" onclick="showSection('hackathons')">Hackathons</a>
+                        <a href="competetion.html" onclick="showSection('competitions')">Competitions</a>
+                        <a href="workshop.html" onclick="showSection('workshops')">Workshops</a>
+                        <!-- <a href="#" onclick="showSection('conferences')">Conferences</a> -->
+                    </div>
+                </li>
+
+                <!-- Resources Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Resources</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showSection('company-questions')">Company-wise Questions</a>
+                        <a href="#" onclick="showSection('career-roadmaps')">Career Roadmaps</a>
+                        <a href="#" onclick="showSection('interview-prep')">Interview Preparation</a>
+                        <a href="#" onclick="showSection('tech-trends')">Tech Trends</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-profile">US</div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h1>Company Interview Questions</h1>
+            <div class="search-bar">
+                <input type="text" id="searchBox" placeholder="Search companies or questions">
+                <button onclick="searchCompany()">Search</button>
+            </div>
+
+            <div class="company-grid">
+                <div class="company-card" onclick="openInterviewDetails('TechCorp')">
+                    <h2>TechCorp</h2>
+                    <img src="company-placeholder.png" alt="TechCorp">
+                </div>
+
+                <div class="company-card" onclick="openInterviewDetails('InnoSoft')">
+                    <h2>InnoSoft</h2>
+                    <img src="company-placeholder.png" alt="InnoSoft">
+                </div>
+
+                <div class="company-card" onclick="openInterviewDetails('DataSys')">
+                    <h2>DataSys</h2>
+                    <img src="D:\schemes.ai\adobe.png" alt="DataSys">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function searchCompany() {
+            let searchTerm = document.getElementById('searchBox').value.toLowerCase();
+            let companies = document.querySelectorAll(".company-card");
+            companies.forEach(card => {
+                if (card.innerText.toLowerCase().includes(searchTerm)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

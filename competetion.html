@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitions</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1E1E1E;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1E1E1E;
+            min-width: 200px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .user-profile {
+            background-color: #333;
+            padding: 12px 12px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+        
+        .content-section {
+            padding: 40px 40px 40px;
+            text-align: left;
+        }
+
+        .competition-card {
+            background-color: #1E1E1E;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        .competition-card h2 {
+            font-size: 22px;
+        }
+
+        .competition-card p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .event-date {
+            font-weight: bold;
+            color: white;
+        }
+
+        .view-details {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .view-details:hover {
+            background-color: #ddd;
+        }
+
+        .details-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .details-content {
+            background: #1E1E1E;
+            padding: 30px;
+            border-radius: 10px;
+            width: 50%;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .close-btn {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="page-1737902127916.html">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="internship.html">Internships</a></li>
+                <li><a href="mentorship.html">Mentorship</a></li>
+                
+                <!-- Events Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Events</a>
+                    <div class="dropdown-content">
+                        <a href="hackathons.html" onclick="showSection('hackathons')">Hackathons</a>
+                        <a href="competition.html" onclick="showSection('competitions')">Competitions</a>
+                        <a href="workshop.html" onclick="showSection('workshops')">Workshops</a>
+                    </div>
+                </li>
+
+                <!-- Resources Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Resources</a>
+                    <div class="dropdown-content">
+                        <a href="companywisequestion.html" onclick="showSection('company-questions')">Company-wise Questions</a>
+                        <a href="#" onclick="showSection('career-roadmaps')">Career Roadmaps</a>
+                        <a href="#" onclick="showSection('interview-prep')">Interview Preparation</a>
+                        <a href="#" onclick="showSection('tech-trends')">Tech Trends</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-profile">US</div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h1>Competitions</h1>
+            <div class="competition-card">
+                <h2>CodeChamp 2024</h2>
+                <p><strong>Organized by:</strong> DevCommunity</p>
+                <p>A global coding competition featuring algorithmic and problem-solving challenges.</p>
+                <p class="event-date"><strong>Competition Date:</strong> March 10, 2024</p>
+                <button class="view-details" onclick="openCompetitionDetails()">View Details</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Competition Details Modal -->
+    <div class="details-modal" id="competitionDetailsModal">
+        <div class="details-content">
+            <button class="close-btn" onclick="closeCompetitionDetails()">Close</button>
+            <h2>CodeChamp 2024</h2>
+            <p><strong>Organized by:</strong> DevCommunity</p>
+            <p><strong>Description:</strong> A global coding competition where participants compete in algorithmic and problem-solving challenges.</p>
+            <p><strong>Skills Required:</strong></p>
+            <ul>
+                <li>Data Structures & Algorithms</li>
+                <li>Competitive Programming</li>
+                <li>Problem-Solving & Logic</li>
+            </ul>
+            <p><strong>Location:</strong> Online</p>
+            <p><strong>Competition Date:</strong> March 10, 2024</p>
+            <p><strong>Registration Deadline:</strong> March 5, 2024</p>
+            <p><strong>Resources:</strong></p>
+            <ul>
+                <li><a href="#" style="color: #00aaff;">DSA Roadmap</a></li>
+                <li><a href="#" style="color: #00aaff;">Competitive Coding Guide</a></li>
+                <li><a href="#" style="color: #00aaff;">Top Algorithm Problems</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function openCompetitionDetails() {
+            document.getElementById('competitionDetailsModal').style.display = 'flex';
+        }
+
+        function closeCompetitionDetails() {
+            document.getElementById('competitionDetailsModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

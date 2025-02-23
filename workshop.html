@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Workshops</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1E1E1E;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1E1E1E;
+            min-width: 200px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .user-profile {
+            background-color: #333;
+            padding: 12px 12px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        /* Page Content */
+        .content-section {
+            padding: 40px 40px 40px;
+            text-align: left;
+        }
+
+        .workshop-card {
+            background-color: #1E1E1E;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            max-width: 400px;
+        }
+
+        .workshop-card h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .workshop-card p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .event-date {
+            font-weight: bold;
+            color: white;
+        }
+
+        .view-details {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .view-details:hover {
+            background-color: #ddd;
+        }
+
+        /* Workshop Details Modal */
+        .details-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .details-content {
+            background: #1E1E1E;
+            padding: 30px;
+            border-radius: 10px;
+            width: 50%;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .close-btn {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="page-1737902127916.html">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="internship.html">Internships</a></li>
+                <li><a href="mentorship.html">Mentorship</a></li>
+                
+                <!-- Events Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Events</a>
+                    <div class="dropdown-content">
+                        <a href="hackthons.html" onclick="showSection('hackathons')">Hackathons</a>
+                        <a href="competetion.html" onclick="showSection('competitions')">Competitions</a>
+                        <a href="workshop.html" onclick="showSection('workshops')">Workshops</a>
+                    </div>
+                </li>
+
+                <!-- Resources Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Resources</a>
+                    <div class="dropdown-content">
+                        <a href="companywisequestion.html" onclick="showSection('company-questions')">Company-wise Questions</a>
+                        <a href="#" onclick="showSection('career-roadmaps')">Career Roadmaps</a>
+                        <a href="#" onclick="showSection('interview-prep')">Interview Preparation</a>
+                        <a href="#" onclick="showSection('tech-trends')">Tech Trends</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-profile">US</div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h1>Upcoming Workshops</h1>
+            <div class="workshop-card">
+                <h2>Advanced Web Development Workshop</h2>
+                <p><strong>Organized by:</strong> TechEdu Institute</p>
+                <p>Join this engaging and hands-on workshop to learn and enhance your skills in web development!</p>
+                <p class="event-date"><strong>Dates:</strong> August 15-16, 2023</p>
+                <button class="view-details" onclick="openWorkshopDetails()">View Details</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Workshop Details Modal -->
+    <div class="details-modal" id="workshopDetailsModal">
+        <div class="details-content">
+            <button class="close-btn" onclick="closeWorkshopDetails()">Close</button>
+            <h2>Advanced Web Development Workshop</h2>
+            <p><strong>Organized by:</strong> TechEdu Institute</p>
+            <p><strong>Description:</strong> A hands-on workshop covering advanced web development topics, including modern frontend and backend technologies.</p>
+            <p><strong>Skills Covered:</strong></p>
+            <ul>
+                <li>React.js & Advanced JavaScript</li>
+                <li>Node.js & Express.js</li>
+                <li>Database Management with MongoDB</li>
+                <li>Web Performance Optimization</li>
+            </ul>
+            <p><strong>Location:</strong> Online</p>
+            <p><strong>Dates:</strong> August 15-16, 2023</p>
+            <p><strong>Registration Deadline:</strong> August 10, 2023</p>
+            <p><strong>Resources:</strong></p>
+            <ul>
+                <li><a href="#" style="color: #00aaff;">Web Development Roadmap</a></li>
+                <li><a href="#" style="color: #00aaff;">React.js Crash Course</a></li>
+                <li><a href="#" style="color: #00aaff;">Backend Development Guide</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function openWorkshopDetails() {
+            document.getElementById('workshopDetailsModal').style.display = 'flex';
+        }
+
+        function closeWorkshopDetails() {
+            document.getElementById('workshopDetailsModal').style.display = 'none';
+        }
+
+        function showSection(sectionId) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

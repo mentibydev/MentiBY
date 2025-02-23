@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship Booking</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1E1E1E;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1E1E1E;
+            min-width: 200px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .user-profile {
+            background-color: #333;
+            padding: 12px 12px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        /* Page Content */
+        .content-section {
+            padding: 40px 40px 40px;
+            text-align: center;
+        }
+
+        .form-container {
+            background-color: #1E1E1E;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            padding: 10px;
+            border: 1px solid #444;
+            background-color: #222;
+            color: white;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .book-session {
+            background-color: white;
+            color: black;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .book-session:hover {
+            background-color: #ddd;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="page-1737902127916.html">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="internship.html">Internships</a></li>
+                <li><a href="mentorship.html">Mentorship</a></li>
+                
+                <!-- Events Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Events</a>
+                    <div class="dropdown-content">
+                        <a href="hackthons.html" onclick="showSection('hackathons')">Hackathons</a>
+                        <a href="competetion.html" onclick="showSection('competitions')">Competitions</a>
+                        <a href="workshop.html" onclick="showSection('workshops')">Workshops</a>
+                    </div>
+                </li>
+
+                <!-- Resources Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Resources</a>
+                    <div class="dropdown-content">
+                        <a href="companywisequestion.html" onclick="showSection('company-questions')">Company-wise Questions</a>
+                        <a href="#" onclick="showSection('career-roadmaps')">Career Roadmaps</a>
+                        <a href="#" onclick="showSection('interview-prep')">Interview Preparation</a>
+                        <a href="#" onclick="showSection('tech-trends')">Tech Trends</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-profile">US</div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h1>Book a Mentorship Session</h1>
+            <p>Fill out the form below to schedule your personalized mentorship session.</p>
+
+            <div class="form-container">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="text" id="mobile" placeholder="1234567890">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="course">Course</label>
+                        <select id="course">
+                            <option>Select a course</option>
+                            <option>Web Development</option>
+                            <option>Data Science</option>
+                            <option>Machine Learning</option>
+                            <option>Cloud Computing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="topic">Topic of Interest</label>
+                        <input type="text" id="topic" placeholder="e.g., React Hooks">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <input type="time" id="time">
+                    </div>
+                </div>
+
+                <button class="book-session">Book Session</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

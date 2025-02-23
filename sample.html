@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathons</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-section {
+            padding: 40px;
+            text-align: left;
+        }
+
+        .hackathon-card {
+            background-color: #1E1E1E;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        .hackathon-card h2 {
+            font-size: 22px;
+        }
+
+        .hackathon-card p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .event-date {
+            font-weight: bold;
+            color: white;
+        }
+
+        .view-details {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .view-details:hover {
+            background-color: #ddd;
+        }
+
+        .details-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .details-content {
+            background: #1E1E1E;
+            padding: 30px;
+            border-radius: 10px;
+            width: 50%;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .close-btn {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            float: right;
+        }
+    </style>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <htmlcode id="el-uhe8ou9h">
+        <div id="root">
+          <nav id="navbar" class="fixed top-5 left-1/2 transform -translate-x-1/2 w-full max-w-7xl mx-auto px-5 rounded-full z-50 bg-neutral-900 bg-opacity-55 backdrop-blur-lg border border-white/20 shadow-lg text-white transition-all duration-300">
+            <div class="max-w-7xl mx-auto " id="el-la63a97z">
+              <div class="flex items-center justify-between h-16" id="el-ivrqeaxz">
+                <div class="flex items-center" id="el-u0k1176p">
+                  <div class="flex-shrink-0" id="el-u8d8ehfs">
+                    <img src="2-removebg-preview.png" alt="MentiBY Logo" class="h-20 w-auto">
+                  </div>
+                </div>
+                <div class="hidden md:block" id="el-p6y2sa8b">
+          <div class="ml-10 flex items-baseline space-x-4" id="el-5impggjm">
+            
+            <nav class="bg-gray-800" id="el-12iljkud">
+          
+        </nav>
+            <a href="work in progress.html" class="text-neutral-300 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium" id="el-l3ab3s5c">Topics</a>
+            <a href="work in progress.html" class="text-neutral-300 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium" id="el-cb6yzegm">Sheets</a>
+            <a href="work in progress.html" class="text-neutral-300 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium" id="el-ojcghvdm">Internship</a>
+            <a href="work in progress.html" class="text-neutral-300 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium" id="el-9s2x6zsz">Events</a>
+            <a href="work in progress.html" class="text-neutral-300 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium" id="el-k84j00g9">Resources</a>
+          </div>
+        </div>
+                <div class="md:hidden" id="el-lbo904uq">
+                  <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-neutral-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only" id="el-x3qgzec2">Open main menu</span>
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-9zfxnju9">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" id="el-cs1mur15"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="md:hidden hidden" id="mobile-menu">
+              <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3" id="el-6zi8gvs2">
+                <a href="work in progress.html" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium" id="el-f1jgt7qt">Topics</a>
+                <a href="work in progress.html" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium" id="el-b4esd7at">Sheets</a>
+                <a href="work in progress.html"block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium" id="el-9z4imd9p">Internship</a>
+                <a href="work in progress.html" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium" id="el-1yiz0s0o">Event</a>
+                <a href="work in progress.html" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium" id="el-ok9pvknz">Resources</a>
+              </div>
+            </div>
+          </nav>
+    <main style="margin-top: 80px;">
+        <section class="content-section">
+            <h1>Internships</h1>
+            <div class="hackathon-card">
+                <h2>AI Research Internship</h2>
+                <p><strong>Organized by:</strong> TechCorp</p>
+                <p>A 3-month internship focused on AI and Machine Learning research projects.</p>
+                <p class="event-date"><strong>Internship Duration:</strong> June 1 - August 31, 2024</p>
+                <button class="view-details" onclick="openInternshipDetails()">View Details</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Internship Details Modal -->
+    <div class="details-modal" id="internshipDetailsModal">
+        <div class="details-content">
+            <button class="close-btn" onclick="closeInternshipDetails()">Close</button>
+            <h2>AI Research Internship</h2>
+            <p><strong>Organized by:</strong> TechCorp</p>
+            <p><strong>Description:</strong> A 3-month research internship focusing on Artificial Intelligence and Machine Learning, where interns will work on real-world AI projects under the guidance of industry experts.</p>
+            <p><strong>Skills Required:</strong></p>
+            <ul>
+                <li>Python & Machine Learning</li>
+                <li>Deep Learning with TensorFlow/PyTorch</li>
+                <li>Data Analysis & Processing</li>
+            </ul>
+            <p><strong>Location:</strong> Remote</p>
+            <p><strong>Internship Duration:</strong> June 1 - August 31, 2024</p>
+            <p><strong>Application Deadline:</strong> May 15, 2024</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        function openInternshipDetails() {
+            document.getElementById('internshipDetailsModal').style.display = 'flex';
+        }
+
+        function closeInternshipDetails() {
+            document.getElementById('internshipDetailsModal').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

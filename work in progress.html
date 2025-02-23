@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentiBY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            color: white;
+            padding: 1rem;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coming soon</h1>
+        <p id="message">We're working hard to bring you something amazing!</p>
+    </div>
+
+    <script>
+        const messages = [
+            "We're working hard to bring you something amazing!",
+            "Exciting things are coming soon!",
+            "Our team is putting the finishing touches on this project.",
+            "Stay tuned for our big reveal!",
+            "We're crafting a great experience for you."
+        ];
+
+        function changeMessage() {
+            document.getElementById('message').textContent = messages[Math.floor(Math.random() * messages.length)];
+        }
+
+        setInterval(changeMessage, 3000);
+    </script>
+</body>
+</html>
