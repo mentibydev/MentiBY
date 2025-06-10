@@ -1,384 +1,384 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{project.meta.ogDescription}}">
-  <meta name="theme-color" content="#ffffff">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="robots" content="{{project.meta.robotsMeta}}">
-
-  <title>MentiBY</title>
-  <!-- SEO Description -->
-  <meta name="description" content="{{project.seoDescription}}">
-  <!-- Performance optimization: Preload critical resources -->
-  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="{{project.meta.ogDescription}}">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="{{project.meta.robotsMeta}}">
+      
+       <title>MentiBY</title>
+      <!-- SEO Description -->
+      <meta name="description" content="{{project.seoDescription}}">
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
   <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
     as="style">
+      
+      <!-- {headerScripts} -->
 
-  <!-- {headerScripts} -->
-
-  <!-- Core CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMG0L849XG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PMG0L849XG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  gtag('js', new Date());
 
-    gtag('config', 'G-PMG0L849XG');
-  </script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: {
-              50: '#f8f8f8',
-              100: '#e8e8e8',
-              200: '#d3d3d3',
-              300: '#a3a3a3',
-              400: '#737373',
-              500: '#525252',
-              600: '#404040',
-              700: '#262626',
-              800: '#171717',
-              900: '#0a0a0a',
-              950: '#030303',
-            },
-            secondary: {
-              50: '#f8f8f8',
-              100: '#e8e8e8',
-              200: '#d3d3d3',
-              300: '#a3a3a3',
-              400: '#737373',
-              500: '#525252',
-              600: '#404040',
-              700: '#262626',
-              800: '#171717',
-              900: '#0a0a0a',
-              950: '#030303',
-            },
-            accent: {
-              50: '#f8f8f8',
-              100: '#e8e8e8',
-              200: '#d3d3d3',
-              300: '#a3a3a3',
-              400: '#737373',
-              500: '#525252',
-              600: '#404040',
-              700: '#262626',
-              800: '#171717',
-              900: '#0a0a0a',
-              950: '#030303',
+  gtag('config', 'G-PMG0L849XG');
+</script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
             },
           },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-            heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
-          },
-          spacing: {
-            '18': '4.5rem',
-            '22': '5.5rem',
-            '30': '7.5rem',
-          },
-          maxWidth: {
-            '8xl': '88rem',
-            '9xl': '96rem',
-          },
-          animation: {
-            'fade-in': 'fadeIn 0.5s ease-in',
-            'fade-out': 'fadeOut 0.5s ease-out',
-            'slide-up': 'slideUp 0.5s ease-out',
-            'slide-down': 'slideDown 0.5s ease-out',
-            'slide-left': 'slideLeft 0.5s ease-out',
-            'slide-right': 'slideRight 0.5s ease-out',
-            'scale-in': 'scaleIn 0.5s ease-out',
-            'scale-out': 'scaleOut 0.5s ease-out',
-            'spin-slow': 'spin 3s linear infinite',
-            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            'bounce-slow': 'bounce 3s infinite',
-            'float': 'float 3s ease-in-out infinite',
-          },
-          keyframes: {
-            fadeIn: {
-              '0%': { opacity: '0' },
-              '100%': { opacity: '1' },
-            },
-            fadeOut: {
-              '0%': { opacity: '1' },
-              '100%': { opacity: '0' },
-            },
-            slideUp: {
-              '0%': { transform: 'translateY(20px)', opacity: '0' },
-              '100%': { transform: 'translateY(0)', opacity: '1' },
-            },
-            slideDown: {
-              '0%': { transform: 'translateY(-20px)', opacity: '0' },
-              '100%': { transform: 'translateY(0)', opacity: '1' },
-            },
-            slideLeft: {
-              '0%': { transform: 'translateX(20px)', opacity: '0' },
-              '100%': { transform: 'translateX(0)', opacity: '1' },
-            },
-            slideRight: {
-              '0%': { transform: 'translateX(-20px)', opacity: '0' },
-              '100%': { transform: 'translateX(0)', opacity: '1' },
-            },
-            scaleIn: {
-              '0%': { transform: 'scale(0.9)', opacity: '0' },
-              '100%': { transform: 'scale(1)', opacity: '1' },
-            },
-            scaleOut: {
-              '0%': { transform: 'scale(1.1)', opacity: '0' },
-              '100%': { transform: 'scale(1)', opacity: '1' },
-            },
-            float: {
-              '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(-10px)' },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
             },
           },
-          aspectRatio: {
-            'portrait': '3/4',
-            'landscape': '4/3',
-            'ultrawide': '21/9',
-          },
-        },
-      },
-      variants: {
-        extend: {
-          opacity: ['disabled'],
-          cursor: ['disabled'],
-          backgroundColor: ['active', 'disabled'],
-          textColor: ['active', 'disabled'],
-        },
-      },
-    }
-  </script>
+        }
+      </script>
 
-  <!-- Utilities and Components -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
-
-  <!-- Optimized Font Loading -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Dynamic Meta Tags -->
+      <meta name="description" content="{{project.meta.ogDescription}}">
+      <meta name="keywords" content="{{project.meta.keywords}}">
+      <meta name="robots" content="{{project.meta.robotsMeta}}">
+      <meta name="google-site-verification" content="{{project.meta.googleVerification}}">
+      <meta name="baidu-verification" content="{{project.meta.baiduVerification}}">
+      <meta name="yandex-verification" content="{{project.meta.yandexVerification}}">
+      <meta name="bing-verification" content="{{project.meta.bingVerification}}">
+      <meta property="og:title" content="{{project.meta.ogTitle}}">
+      <meta property="og:description" content="{{project.meta.ogDescription}}">
+      <meta property="og:image" content="{{project.meta.ogImage}}">
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:site_name" content="{{project.name}}">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="{{project.meta.ogTitle}}">
+      <meta name="twitter:description" content="{{project.meta.ogDescription}}">
+      <meta name="twitter:image" content="{{project.meta.ogImage}}">
 
-  <!-- Dynamic Meta Tags -->
-  <meta name="description" content="{{project.meta.ogDescription}}">
-  <meta name="keywords" content="{{project.meta.keywords}}">
-  <meta name="robots" content="{{project.meta.robotsMeta}}">
-  <meta name="google-site-verification" content="{{project.meta.googleVerification}}">
-  <meta name="baidu-verification" content="{{project.meta.baiduVerification}}">
-  <meta name="yandex-verification" content="{{project.meta.yandexVerification}}">
-  <meta name="bing-verification" content="{{project.meta.bingVerification}}">
-  <meta property="og:title" content="{{project.meta.ogTitle}}">
-  <meta property="og:description" content="{{project.meta.ogDescription}}">
-  <meta property="og:image" content="{{project.meta.ogImage}}">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:site_name" content="{{project.name}}">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{project.meta.ogTitle}}">
-  <meta name="twitter:description" content="{{project.meta.ogDescription}}">
-  <meta name="twitter:image" content="{{project.meta.ogImage}}">
-
-  <!-- Base Styles -->
-  <style>
-    * {
+      <!-- Base Styles -->
+      <style>
+      * {
       -ms-overflow-style: none;
       /* IE and Edge */
       scrollbar-width: none;
       /* Firefox */
-    }
+}
 
-    /* Webkit browsers like Chrome, Safari, newer Edge */
-    *::-webkit-scrollbar {
-      display: none;
-      width: 0;
-      height: 0;
-    }
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
 
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 0px;
-    }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
 
-    ::-webkit-scrollbar-track {
-      background: #f1f1f1;
-      border-radius: 4px;
-    }
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
 
-    ::-webkit-scrollbar-thumb {
-      background: #888;
-      border-radius: 4px;
-    }
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
 
-    ::-webkit-scrollbar-thumb:hover {
-      background: #666;
-    }
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
 
-    /* Remove tap highlight on mobile */
-    * {
-      -webkit-tap-highlight-color: transparent;
-    }
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
 
-    /* Improve text rendering */
-    body {
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    /* Focus outline styles */
-    :focus-visible {
-      outline: 2px solid currentColor;
-      outline-offset: 2px;
-    }
-
-    /* Print styles */
-    @media print {
-      .no-print {
-        display: none !important;
-      }
-
-      a[href]:after {
-        content: " (" attr(href) ")";
-      }
-    }
-  </style>
-
-  <!-- Enhanced Image Handler -->
-  <script type="text/javascript">
+      <!-- Enhanced Image Handler -->
+      <script type="text/javascript">
       (function (c, l, a, r, i, t, y) {
         c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
         t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
         y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", "qb1zsl2qxe");
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const img = entry.target;
-            if (img.dataset.src) {
-              const tempImage = new Image();
-              tempImage.onload = () => {
-                img.src = img.dataset.src;
-                img.classList.remove('opacity-0');
-                img.classList.add('opacity-100');
-              };
-              tempImage.src = img.dataset.src;
-              img.removeAttribute('data-src');
-              observer.unobserve(img);
-            }
-          }
-        });
-      }, {
-        rootMargin: '50px 0px',
-        threshold: 0.01
-      });
-
-      const loadImage = (img) => {
-        if ('loading' in HTMLImageElement.prototype) {
-          img.loading = 'lazy';
-        }
-
-        img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
-
-        img.onerror = () => {
-          const width = img.getAttribute('width') || img.clientWidth || 300;
-          const height = img.getAttribute('height') || img.clientHeight || 200;
-          img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
-          img.alt = 'Image unavailable';
-          img.classList.remove('opacity-0');
-          img.classList.add('opacity-100', 'error-image');
-        };
-
-        if (img.dataset.src) {
-          imageObserver.observe(img);
-        } else {
-          img.classList.remove('opacity-0');
-          img.classList.add('opacity-100');
-        }
-      };
-
-      document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
-
-      // Watch for dynamically added images
-      new MutationObserver((mutations) => {
-        mutations.forEach(mutation => {
-          mutation.addedNodes.forEach(node => {
-            if (node.nodeType === 1) {
-              if (node.tagName === 'IMG') {
-                loadImage(node);
+    })(window, document, "clarity", "script", "qb1zsl2qxe");
+    
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
               }
-              node.querySelectorAll('img').forEach(loadImage);
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
             }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
           });
         });
-      }).observe(document.body, {
-        childList: true,
-        subtree: true
-      });
-    });
 
-    // Performance monitoring
-    if ('performance' in window && 'PerformanceObserver' in window) {
-      // Create performance observer
-      const observer = new PerformanceObserver((list) => {
-        const entries = list.getEntries();
-        entries.forEach((entry) => {
-          if (entry.entryType === 'largest-contentful-paint') {
-            // console.log(`LCP: ${entry.startTime}ms`);
-          }
-          if (entry.entryType === 'first-input') {
-            // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
-          }
-          if (entry.entryType === 'layout-shift') {
-            // console.log(`CLS: ${entry.value}`);
-          }
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
         });
-      });
-
-      // Observe performance metrics
-      observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
-
-      // Log basic performance metrics
-      window.addEventListener('load', () => {
-        const timing = performance.getEntriesByType('navigation')[0];
-        console.log({
-          'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
-          'TCP Connection': timing.connectEnd - timing.connectStart,
-          'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
-          'Page Load': timing.loadEventEnd - timing.navigationStart
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
         });
-      });
-    }
-
-    // Handle offline/online status
-    window.addEventListener('online', () => {
-      document.body.classList.remove('offline');
-      console.log('Connection restored');
-    });
-
-    window.addEventListener('offline', () => {
-      document.body.classList.add('offline');
-      console.log('Connection lost');
-    });
-  </script>
-</head>
+      </script>
+   </head>
 
 <body class="font-sans text-gray-900 bg-black">
   <!-- Fixed Top Banner -->
@@ -395,10 +395,10 @@
         <a href="https://mentiby.com/product/mentibycohort3" 
            class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-yellow-500/25">
           Join Now
-        </a>
-      </div>
-    </div>
+      </a>
   </div>
+</div>
+            </div>
 
   <!-- Skip to main content link for accessibility -->
   <a href="#main-content"
@@ -420,15 +420,30 @@
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8">
-          <a href="#hero" class="text-gray-300 hover:text-white transition-all duration-300 font-medium">Home</a>
-          <a href="#features"
-            class="text-gray-300 hover:text-white transition-all duration-300 font-medium">Features</a>
-          <a href="#howItWorks" class="text-gray-300 hover:text-white transition-all duration-300 font-medium">How it
-            Works</a>
-          <a href="#testimonials"
-            class="text-gray-300 hover:text-white transition-all duration-300 font-medium">Testimonials</a>
-          <a href="#pricing" class="text-gray-300 hover:text-white transition-all duration-300 font-medium">Pricing</a>
-          <a href="#contact" class="text-gray-300 hover:text-white transition-all duration-300 font-medium">Contact</a>
+          <a href="#hero" class="text-gray-300 hover:text-white hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/25 px-4 py-2 rounded-xl transition-all duration-300 font-medium relative group">
+            <span class="relative z-10">Home</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-xl transition-all duration-300"></div>
+          </a>
+          <a href="#features" class="text-gray-300 hover:text-white hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/25 px-4 py-2 rounded-xl transition-all duration-300 font-medium relative group">
+            <span class="relative z-10">Features</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-xl transition-all duration-300"></div>
+          </a>
+          <a href="#courses" class="text-gray-300 hover:text-white hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/25 px-4 py-3 rounded-xl transition-all duration-300 text-center relative group">
+            <span class="relative z-10">Courses</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-xl transition-all duration-300"></div>
+          </a>
+          <a href="#testimonials" class="text-gray-300 hover:text-white hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/25 px-4 py-2 rounded-xl transition-all duration-300 font-medium relative group">
+            <span class="relative z-10">Testimonials</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-xl transition-all duration-300"></div>
+          </a>
+          <a href="#pricing" class="text-gray-300 hover:text-white hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/25 px-4 py-2 rounded-xl transition-all duration-300 font-medium relative group">
+            <span class="relative z-10">Pricing</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-xl transition-all duration-300"></div>
+          </a>
+          <a href="#contact" class="text-gray-300 hover:text-white hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/25 px-4 py-2 rounded-xl transition-all duration-300 font-medium relative group">
+            <span class="relative z-10">Contact</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-xl transition-all duration-300"></div>
+          </a>
         </div>
 
         <!-- CTA Button -->
@@ -437,41 +452,54 @@
             class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-6 py-2 rounded-xl text-white font-semibold transition-all duration-300 transform hover:scale-105">
             Enroll Now
           </button>
-        </div>
+          </div>
 
         <!-- Mobile Menu Button -->
         <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
 
       <!-- Mobile Menu -->
       <div id="mobile-menu"
         class="hidden md:hidden absolute top-full left-1/2 transform -translate-x-1/2 w-85% bg-black/90 backdrop-blur-xl border border-gray-800/50 rounded-xl mt-2 py-4">
         <div class="flex flex-col space-y-4 px-6">
-          <a href="#hero" class="text-gray-300 hover:text-white transition-all duration-300 text-center py-2">Home</a>
-          <a href="#features"
-            class="text-gray-300 hover:text-white transition-all duration-300 text-center py-2">Features</a>
-          <a href="#howItWorks" class="text-gray-300 hover:text-white transition-all duration-300 text-center py-2">How
-            it Works</a>
-          <a href="#testimonials"
-            class="text-gray-300 hover:text-white transition-all duration-300 text-center py-2">Testimonials</a>
-          <a href="#pricing"
-            class="text-gray-300 hover:text-white transition-all duration-300 text-center py-2">Pricing</a>
-          <a href="#contact"
-            class="text-gray-300 hover:text-white transition-all duration-300 text-center py-2">Contact</a>
+          <a href="#hero" class="text-gray-300 hover:text-white hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/25 px-4 py-3 rounded-xl transition-all duration-300 text-center relative group">
+            <span class="relative z-10">Home</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-xl transition-all duration-300"></div>
+          </a>
+          <a href="#features" class="text-gray-300 hover:text-white hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/25 px-4 py-3 rounded-xl transition-all duration-300 text-center relative group">
+            <span class="relative z-10">Features</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-xl transition-all duration-300"></div>
+          </a>
+          <a href="#courses" class="text-gray-300 hover:text-white hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/25 px-4 py-3 rounded-xl transition-all duration-300 text-center relative group">
+            <span class="relative z-10">Courses</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-xl transition-all duration-300"></div>
+          </a>
+          <a href="#testimonials" class="text-gray-300 hover:text-white hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/25 px-4 py-3 rounded-xl transition-all duration-300 text-center relative group">
+            <span class="relative z-10">Testimonials</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-xl transition-all duration-300"></div>
+          </a>
+          <a href="#pricing" class="text-gray-300 hover:text-white hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/25 px-4 py-3 rounded-xl transition-all duration-300 text-center relative group">
+            <span class="relative z-10">Pricing</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-xl transition-all duration-300"></div>
+          </a>
+          <a href="#contact" class="text-gray-300 hover:text-white hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/25 px-4 py-3 rounded-xl transition-all duration-300 text-center relative group">
+            <span class="relative z-10">Contact</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-xl transition-all duration-300"></div>
+          </a>
           <div class="pt-4 border-t border-gray-700">
             <button onclick="window.location.href='https://mentiby.com/product/mentibycohort3';"
               class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-6 py-3 rounded-xl text-white font-semibold transition-all duration-300">
               Enroll Now
             </button>
-          </div>
         </div>
       </div>
+           </div>
     </nav>
-
+  
     <script>
       // Mobile menu toggle
       document.addEventListener('DOMContentLoaded', function () {
@@ -514,47 +542,47 @@
 </html>
 
 <style>
-  .animate-slide-down {
-    animation: slide-down 0.3s ease-out;
-  }
-
-  /* Move navbar down */
-  #navbar {
+      .animate-slide-down {
+        animation: slide-down 0.3s ease-out;
+      }
+  
+      /* Move navbar down */
+      #navbar {
     top: 55px;
-  }
+      }
+  
+      /* Mobile Menu Fix */
+      @media (max-width: 768px) {
+        #mobile-menu {
+          width: 85%;
+          right: 50%;
+          transform: translateX(50%);
+          top: 4rem;
+        }
+  
+        #mobile-menu a {
+          display: block;
+          text-align: center;
+          padding: 10px;
+        }
+  
+        #mobile-menu-button {
+          position: relative;
+          z-index: 100;
+        }
+      }
+    </style>
 
-  /* Mobile Menu Fix */
-  @media (max-width: 768px) {
-    #mobile-menu {
-      width: 85%;
-      right: 50%;
-      transform: translateX(50%);
-      top: 4rem;
-    }
-
-    #mobile-menu a {
-      display: block;
-      text-align: center;
-      padding: 10px;
-    }
-
-    #mobile-menu-button {
-      position: relative;
-      z-index: 100;
-    }
-  }
-</style>
-
-</div>
-
-</div>
-</htmlcode>
+  </div>
+  
+  </div>
+</htmlcode>  
 </div>
 </htmlcode>
 </element>
 <element id="fddc828a-fee8-4fe3-9340-6ccec28b5198" data-section-id="fddc828a-fee8-4fe3-9340-6ccec28b5198">
-  <htmlcode id="el-si9nf8yd">
-    <div id="root">
+<htmlcode id="el-si9nf8yd">
+<div id="root">
       <section id="hero"
         class="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white pt-16 relative overflow-hidden">
         <!-- Animated background elements -->
@@ -566,46 +594,46 @@
         <div
           class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center min-h-[80vh] relative z-10"
           id="el-2baa65xu">
-          <div class="md:w-1/2 space-y-8 animate__animated animate__fadeInLeft">
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight mt-20 md:mt-0">
-              Transform Your Learning Journey<br> with
+      <div class="md:w-1/2 space-y-8 animate__animated animate__fadeInLeft">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mt-20 md:mt-0">
+          Transform Your Learning Journey<br> with 
               <span
                 class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 drop-shadow-lg">Menti</span><span
                 class="text-white drop-shadow-lg">BY</span>
-            </h1>
-
+        </h1>
+        
             <p class="text-xl text-gray-300 leading-relaxed">
               Real time project based learning with Hands on experience. Master new skills at your own pace with expert
               guidance.
-            </p>
-            <div class="space-x-4 pt-4">
-              <button
+        </p>
+        <div class="space-x-4 pt-4">
+            <button 
                 class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25"
                 onclick="window.location.href='https://mentiby.com/product/mentibycohort3';">
-                Enroll Now
-              </button>
+            Enroll Now
+        </button>
               <button
                 class="border-2 border-gray-600 hover:border-blue-400 hover:text-blue-400 hover:bg-blue-400/10 px-8 py-4 rounded-xl font-semibold transition-all duration-300 backdrop-blur-sm"
-                onclick="window.location.href='https://www.codewithswaroop.com/sessions/Placements-Roadmap---3rd--4th-Years-682c39c81031836ed0393eca';">
-                Learn More
-              </button>
-            </div>
-            <div class="flex items-center space-x-4 pt-8">
-              <div class="flex -space-x-2">
+        onclick="window.location.href='https://www.codewithswaroop.com/sessions/Placements-Roadmap---3rd--4th-Years-682c39c81031836ed0393eca';">
+    Learn More
+</button>
+        </div>
+        <div class="flex items-center space-x-4 pt-8">
+          <div class="flex -space-x-2">
                 <div
                   class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
                   <span class="text-sm font-bold">1k+</span>
-                </div>
+            </div>
                 <div
                   class="w-12 h-12 rounded-full bg-gradient-to-r from-yellow-500 to-orange-500 flex items-center justify-center shadow-lg">
                   <span class="text-sm font-bold">★4.9</span>
-                </div>
-              </div>
-              <p class="text-gray-300">Trusted by over 1,000 students worldwide</p>
             </div>
           </div>
-          <div class="md:w-1/2 mt-12 md:mt-0 animate__animated animate__fadeInRight">
-            <div class="relative">
+          <p class="text-gray-300">Trusted by over 1,000 students worldwide</p>
+        </div>
+      </div>
+      <div class="md:w-1/2 mt-12 md:mt-0 animate__animated animate__fadeInRight">
+        <div class="relative">
               <div
                 class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl blur-lg opacity-40">
               </div>
@@ -616,37 +644,37 @@
                     class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-all duration-300">
                     <div class="text-blue-400 text-2xl font-bold">100+</div>
                     <div class="text-sm text-gray-300">Hours of content</div>
-                  </div>
+              </div>
                   <div
                     class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-purple-500/50 transition-all duration-300">
                     <div class="text-purple-400 text-2xl font-bold">25+</div>
                     <div class="text-sm text-gray-300">Mentors</div>
-                  </div>
+              </div>
                   <div
                     class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-green-500/50 transition-all duration-300">
                     <div class="text-green-400 text-2xl font-bold">24/7</div>
                     <div class="text-sm text-gray-300">Doubt Support</div>
-                  </div>
+              </div>
                   <div
                     class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl border border-gray-700 hover:border-yellow-500/50 transition-all duration-300">
                     <div class="text-yellow-400 text-2xl font-bold">50+</div>
                     <div class="text-sm text-gray-300">projects</div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+        </div>
         <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent" id="el-vw4bl8q3">
         </div>
-      </section>
-    </div>
-  </htmlcode>
+  </section>
+</div>
+</htmlcode>
 </element>
 <element id="312bd17e-eeb3-4ae5-a6c8-4264cae6e308" data-section-id="312bd17e-eeb3-4ae5-a6c8-4264cae6e308">
 
-  <htmlCode>
-    <div id="root">
+<htmlCode>
+<div id="root">
       <section id="features" class="py-20 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
         <!-- Background decorative elements -->
         <div class="absolute inset-0 overflow-hidden">
@@ -655,13 +683,13 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
             <h2 class="text-4xl font-bold text-white mb-4">Why Choose MentiBY?</h2>
             <p class="text-xl text-gray-300">Learn From Someone who is already Mastered in it.
-            </p>
-          </div>
+        </p>
+      </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div
               class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 transform hover:-translate-y-2 transition-all duration-300 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 animate__animated animate__fadeInUp">
               <div
@@ -669,12 +697,12 @@
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
+            </svg>
+          </div>
               <h3 class="text-xl font-semibold text-white mb-3">AI-Powered Learning</h3>
               <p class="text-gray-300">Personalized learning paths adapted to your pace and style using advanced AI
                 algorithms</p>
-            </div>
+        </div>
 
             <div
               class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 transform hover:-translate-y-2 transition-all duration-300 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/10 animate__animated animate__fadeInUp"
@@ -684,11 +712,11 @@
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              </div>
+            </svg>
+          </div>
               <h3 class="text-xl font-semibold text-white mb-3">Expert Mentorship</h3>
               <p class="text-gray-300">Connect with industry professionals for personalized guidance and feedback</p>
-            </div>
+        </div>
 
             <div
               class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 transform hover:-translate-y-2 transition-all duration-300 hover:border-green-500/50 hover:shadow-xl hover:shadow-green-500/10 animate__animated animate__fadeInUp"
@@ -698,11 +726,11 @@
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-                </svg>
-              </div>
+            </svg>
+          </div>
               <h3 class="text-xl font-semibold text-white mb-3">Interactive Curriculum</h3>
               <p class="text-gray-300">Engaging content with real-time practice exercises and instant feedback</p>
-            </div>
+        </div>
 
             <div
               class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 transform hover:-translate-y-2 transition-all duration-300 hover:border-yellow-500/50 hover:shadow-xl hover:shadow-yellow-500/10 animate__animated animate__fadeInUp">
@@ -711,11 +739,11 @@
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
+            </svg>
+          </div>
               <h3 class="text-xl font-semibold text-white mb-3">Progress Tracking</h3>
               <p class="text-gray-300">Detailed analytics and progress reports to monitor your learning journey</p>
-            </div>
+        </div>
 
             <div
               class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 transform hover:-translate-y-2 transition-all duration-300 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 animate__animated animate__fadeInUp"
@@ -725,11 +753,11 @@
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                </svg>
-              </div>
+            </svg>
+          </div>
               <h3 class="text-xl font-semibold text-white mb-3">Community Support</h3>
               <p class="text-gray-300">Join a vibrant community of learners for discussions and collaboration</p>
-            </div>
+        </div>
 
             <div
               class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 transform hover:-translate-y-2 transition-all duration-300 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 animate__animated animate__fadeInUp"
@@ -739,21 +767,21 @@
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
+            </svg>
+          </div>
               <h3 class="text-xl font-semibold text-white mb-3">Flexible Learning</h3>
               <p class="text-gray-300">Learn at your own pace with 24/7 access to course materials</p>
-            </div>
-          </div>
         </div>
-      </section>
+      </div>
     </div>
+  </section>
+</div>
   </htmlCode>
 </element>
 <element id="e7c3daf4-1ea9-49b0-96ec-39b179f53c30" data-section-id="e7c3daf4-1ea9-49b0-96ec-39b179f53c30">
 
-  <htmlCode>
-    <div id="root">
+<htmlCode>
+<div id="root">
       <section id="howItWorks"
         class="py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
         <!-- Background decorative elements -->
@@ -763,96 +791,96 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="text-center mb-16 animate__animated animate__fadeIn">
-            <h2 class="text-4xl font-bold mb-4">How MentiBY Works</h2>
-            <p class="text-xl text-gray-300">Four simple steps to start your learning journey</p>
-          </div>
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold mb-4">How MentiBY Works</h2>
+        <p class="text-xl text-gray-300">Four simple steps to start your learning journey</p>
+      </div>
 
-          <div class="relative">
+      <div class="relative">
             <div
               class="absolute hidden md:block w-1 bg-gradient-to-b from-blue-500 to-purple-600 h-full left-1/2 transform -translate-x-1/2">
             </div>
-
-            <div class="space-y-16">
-              <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeInLeft">
-                <div class="md:w-1/2 md:pr-16 text-right">
+        
+        <div class="space-y-16">
+          <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeInLeft">
+            <div class="md:w-1/2 md:pr-16 text-right">
                   <div
                     class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-2xl border border-gray-700 hover:border-blue-500/50 transition-all duration-300">
                     <h3 class="text-2xl font-bold text-blue-400 mb-4">1. Sign Up</h3>
                     <p class="text-gray-300">Create your account and tell us about your learning goals and preferences
                     </p>
-                  </div>
-                </div>
-                <div class="hidden md:flex md:w-16 relative justify-center items-center">
+              </div>
+            </div>
+            <div class="hidden md:flex md:w-16 relative justify-center items-center">
                   <div
                     class="h-16 w-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
                     1</div>
-                </div>
-                <div class="md:w-1/2 md:pl-16"></div>
-              </div>
+            </div>            
+            <div class="md:w-1/2 md:pl-16"></div>
+          </div>
 
-              <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeInRight">
-                <div class="md:w-1/2 md:pr-16"></div>
-                <div class="hidden md:flex md:w-16 relative justify-center items-center">
+          <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeInRight">
+            <div class="md:w-1/2 md:pr-16"></div>
+            <div class="hidden md:flex md:w-16 relative justify-center items-center">
                   <div
                     class="h-16 w-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
                     2</div>
-                </div>
-                <div class="md:w-1/2 md:pl-16">
+            </div>            
+            <div class="md:w-1/2 md:pl-16">
                   <div
                     class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-2xl border border-gray-700 hover:border-purple-500/50 transition-all duration-300">
                     <h3 class="text-2xl font-bold text-purple-400 mb-4">2. AI Assessment</h3>
-                    <p class="text-gray-300">Our AI analyzes your needs and creates a personalized learning path</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeInLeft">
-                <div class="md:w-1/2 md:pr-16 text-right">
-                  <div
-                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-2xl border border-gray-700 hover:border-green-500/50 transition-all duration-300">
-                    <h3 class="text-2xl font-bold text-green-400 mb-4">3. Match with Mentor</h3>
-                    <p class="text-gray-300">Get paired with expert mentors who specialize in your area of interest</p>
-                  </div>
-                </div>
-                <div class="hidden md:flex md:w-16 relative justify-center items-center">
-                  <div
-                    class="h-16 w-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
-                    3</div>
-                </div>
-
-                <div class="md:w-1/2 md:pl-16"></div>
-              </div>
-
-              <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeInRight">
-                <div class="md:w-1/2 md:pr-16"></div>
-                <div class="hidden md:flex md:w-16 relative justify-center items-center">
-                  <div
-                    class="h-16 w-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
-                    4</div>
-                </div>
-
-                <div class="md:w-1/2 md:pl-16">
-                  <div
-                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-2xl border border-gray-700 hover:border-yellow-500/50 transition-all duration-300">
-                    <h3 class="text-2xl font-bold text-yellow-400 mb-4">4. Start Learning</h3>
-                    <p class="text-gray-300">Begin your journey with interactive courses and real-time guidance</p>
-                  </div>
-                </div>
+                <p class="text-gray-300">Our AI analyzes your needs and creates a personalized learning path</p>
               </div>
             </div>
           </div>
 
-          <div class="text-center mt-16">
+          <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeInLeft">
+            <div class="md:w-1/2 md:pr-16 text-right">
+                  <div
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-2xl border border-gray-700 hover:border-green-500/50 transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-green-400 mb-4">3. Match with Mentor</h3>
+                <p class="text-gray-300">Get paired with expert mentors who specialize in your area of interest</p>
+              </div>
+            </div>
+            <div class="hidden md:flex md:w-16 relative justify-center items-center">
+                  <div
+                    class="h-16 w-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                    3</div>
+            </div>
+            
+            <div class="md:w-1/2 md:pl-16"></div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeInRight">
+            <div class="md:w-1/2 md:pr-16"></div>
+            <div class="hidden md:flex md:w-16 relative justify-center items-center">
+                  <div
+                    class="h-16 w-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                    4</div>
+            </div>
+            
+            <div class="md:w-1/2 md:pl-16">
+                  <div
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-2xl border border-gray-700 hover:border-yellow-500/50 transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-4">4. Start Learning</h3>
+                <p class="text-gray-300">Begin your journey with interactive courses and real-time guidance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-16">
             <button
               class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-10 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25 animate__animated animate__fadeInUp"
               onclick="window.location.href='https://mentiby.com/product/mentibycohort3';">
-              Start Your Journey Now
-            </button>
-          </div>
-        </div>
-      </section>
+          Start Your Journey Now
+        </button>
+      </div>
     </div>
+  </section>
+</div>
   </htmlCode>
 </element>
 <element id="b5bc01c0-d805-412f-9ce1-b90b345425b6" data-section-id="b5bc01c0-d805-412f-9ce1-b90b345425b6">
@@ -1085,8 +1113,8 @@
 <element id="01d4d66d-5ba8-455d-a8c4-8c6f9cecbf76" data-section-id="01d4d66d-5ba8-455d-a8c4-8c6f9cecbf76">
 
 
-  <htmlcode id="el-vjgez5vb">
-    <div id="root">
+                <htmlcode id="el-vjgez5vb">
+<div id="root">
       <section id="testimonials"
         class="py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
         <!-- Background decorative elements -->
@@ -1096,127 +1124,127 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" id="el-fj866gur">
-          <div class="text-center mb-16 animate__animated animate__fadeIn">
+  <div class="text-center mb-16 animate__animated animate__fadeIn">
             <h2 class="text-4xl font-bold text-white mb-4">Student Success Stories</h2>
-            <p class="text-xl text-gray-300">Hear from our community of learners</p>
-          </div>
+    <p class="text-xl text-gray-300">Hear from our community of learners</p>
+  </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Testimonial 1 -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Testimonial 1 -->
             <div class="transform transition-all duration-500 hover:scale-105 animate__animated animate__fadeInUp"
               data-aos="fade-up">
               <div
                 class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-2xl border border-gray-700 hover:border-blue-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10">
-                <div class="flex items-center mb-6">
+        <div class="flex items-center mb-6">
                   <div
                     class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-xl font-bold shadow-lg">
-                    NA
-                  </div>
-                  <div class="ml-4">
+            NA
+          </div>
+          <div class="ml-4">
                     <h4 class="font-semibold text-white">Naga Aditya</h4>
                     <p class="text-blue-400 text-sm">Basic Batch</p>
-                  </div>
-                </div>
-                <div class="mb-6">
+          </div>
+        </div>
+        <div class="mb-6">
                   <div class="flex text-yellow-400 mb-3 text-lg">
-                    ★★★★★
-                  </div>
+            ★★★★★
+          </div>
                   <p class="text-gray-300 leading-relaxed">"MentiBY made a huge difference in my not only in coding but
                     helped me to know the industry trends so that i can upskill according to the industry needs!."</p>
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+    </div>
 
-            <!-- Testimonial 2 -->
+    <!-- Testimonial 2 -->
             <div class="transform transition-all duration-500 hover:scale-105 animate__animated animate__fadeInUp"
               data-aos="fade-up" data-aos-delay="100" style="animation-delay: 0.2s">
               <div
                 class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-2xl border border-gray-700 hover:border-purple-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/10">
-                <div class="flex items-center mb-6">
+        <div class="flex items-center mb-6">
                   <div
                     class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-xl font-bold shadow-lg">
-                    MK
-                  </div>
-                  <div class="ml-4">
+            MK
+          </div>
+          <div class="ml-4">
                     <h4 class="font-semibold text-white">Mohan Kumar</h4>
                     <p class="text-purple-400 text-sm">Intermediate Batch</p>
-                  </div>
-                </div>
-                <div class="mb-6">
+          </div>
+        </div>
+        <div class="mb-6">
                   <div class="flex text-yellow-400 mb-3 text-lg">
-                    ★★★★★
-                  </div>
+            ★★★★★
+          </div>
                   <p class="text-gray-300 leading-relaxed">"Mentiby is a great platform with interactive lessons,
                     real-world projects, and a supportive community. I would love to be a part of the Mentiby
                     community!"</p>
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+    </div>
 
-            <!-- Testimonial 3 -->
+    <!-- Testimonial 3 -->
             <div class="transform transition-all duration-500 hover:scale-105 animate__animated animate__fadeInUp"
               data-aos="fade-up" data-aos-delay="200" style="animation-delay: 0.4s">
               <div
                 class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-2xl border border-gray-700 hover:border-green-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/10">
-                <div class="flex items-center mb-6">
+        <div class="flex items-center mb-6">
                   <div
                     class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center text-xl font-bold shadow-lg">
-                    PY
-                  </div>
-                  <div class="ml-4">
+            PY
+          </div>
+          <div class="ml-4">
                     <h4 class="font-semibold text-white">Priyanka</h4>
                     <p class="text-green-400 text-sm">Basic Batch</p>
-                  </div>
-                </div>
-                <div class="mb-6">
-                  <div class="flex text-yellow-400 mb-3 text-lg">
-                    ★★★★★
-                  </div>
-                  <p class="text-gray-300 leading-relaxed">"The mentors at MentiBY are exceptional. Their real-world
-                    experience and guidance made all the difference in my learning journey."</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </section>
-
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          new Swiper('.testimonial-slider .swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-              delay: 5000,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-            },
-            breakpoints: {
-              640: {
-                slidesPerView: 1,
-              },
-              768: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 3,
-              },
-            },
-          });
-        });
-      </script>
+        <div class="mb-6">
+                  <div class="flex text-yellow-400 mb-3 text-lg">
+            ★★★★★
+          </div>
+                  <p class="text-gray-300 leading-relaxed">"The mentors at MentiBY are exceptional. Their real-world
+                    experience and guidance made all the difference in my learning journey."</p>
+        </div>
+      </div>
     </div>
-  </htmlcode>
+  </div>
+</div>
+  </section>
+
+  <script>
+        document.addEventListener('DOMContentLoaded', function () {
+      new Swiper('.testimonial-slider .swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    });
+  </script>
+</div>
+</htmlcode>
 </element>
 <element id="a733df1a-0556-4572-be94-e9a59206dbcf" data-section-id="a733df1a-0556-4572-be94-e9a59206dbcf">
 
 
-  <htmlcode id="el-xx35mikk">
-    <div id="root">
+                <htmlcode id="el-xx35mikk">
+<div id="root">
       <section id="pricing" class="py-20 bg-gradient-to-br from-gray-900 to-black text-white relative overflow-hidden">
         <!-- Background decorative elements -->
         <div class="absolute inset-0 overflow-hidden">
@@ -1225,16 +1253,16 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" id="el-fm1abawn">
-          <div class="text-center mb-16 animate__animated animate__fadeIn">
+  <div class="text-center mb-16 animate__animated animate__fadeIn">
             <h2 class="text-4xl font-bold text-white mb-4">Simple, Transparent Pricing</h2>
             <p class="text-xl text-gray-300">Choose the perfect plan for your learning journey</p>
-          </div>
+  </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Basic Plan -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Basic Plan -->
             <div
               class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl p-8 border border-gray-700 transform hover:-translate-y-2 transition-all duration-300 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 animate__animated animate__fadeInUp relative">
-              <div class="absolute -top-4 right-4">
+        <div class="absolute -top-4 right-4">
                 <span
                   class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">Popular</span>
               </div>
@@ -1243,46 +1271,46 @@
                 <div class="text-blue-400 text-sm font-semibold mb-6">Perfect for beginners</div>
                 <div class="text-4xl font-bold text-white mb-6">
                   ₹10000<span class="text-gray-400 text-base font-normal block mt-1">(EMI available)</span>
-                </div>
-              </div>
-              <ul class="space-y-4 mb-8">
-                <li class="flex items-center">
+        </div>
+      </div>
+      <ul class="space-y-4 mb-8">
+        <li class="flex items-center">
                   <svg class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
                   <span class="text-gray-300">Access to basic courses</span>
-                </li>
-                <li class="flex items-center">
+        </li>
+        <li class="flex items-center">
                   <svg class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
                   <span class="text-gray-300">1-on-1 mentorship</span>
-                </li>
-                <li class="flex items-center">
+          </li>
+        <li class="flex items-center">
                   <svg class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
                   <span class="text-gray-300">Community support</span>
-                </li>
-                <li class="flex items-center">
+        </li>
+        <li class="flex items-center">
                   <svg class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
                   <span class="text-gray-300">Monthly progress reports</span>
-                </li>
-              </ul>
+        </li>
+      </ul>
               <button
                 class="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25"
                 onclick="window.location.href='https://mentiby.com/product/mentibycohort3';">
-                Get Started
-              </button>
-            </div>
+        Get Started
+      </button>
+    </div>
 
-            <!-- Pro Plan -->
+    <!-- Pro Plan -->
             <div
               class="bg-gradient-to-br from-blue-900 to-purple-900 text-white rounded-2xl shadow-2xl p-8 border-2 border-blue-500/50 transform hover:-translate-y-2 transition-all duration-300 scale-105 hover:shadow-xl hover:shadow-purple-500/25 animate__animated animate__fadeInUp relative"
               style="animation-delay: 0.2s">
@@ -1291,101 +1319,101 @@
                   class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">Coming
                   Soon</span>
               </div>
-              <div class="text-center">
+      <div class="text-center">
                 <h3 class="text-2xl font-bold mb-3">Advanced</h3>
                 <div class="text-purple-300 text-sm font-semibold mb-6">Best for serious learners</div>
-                <div class="text-4xl font-bold mb-6">
+        <div class="text-4xl font-bold mb-6">
                   🔒<span class="text-gray-400 text-base font-normal block mt-1">Price TBA</span>
-                </div>
-              </div>
-              <ul class="space-y-4 mb-8">
-                <li class="flex items-center">
+        </div>
+      </div>
+      <ul class="space-y-4 mb-8">
+        <li class="flex items-center">
                   <svg class="w-5 h-5 text-purple-300 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
                   <span class="text-gray-200">All Basic features</span>
-                </li>
-                <li class="flex items-center">
+        </li>
+        <li class="flex items-center">
                   <svg class="w-5 h-5 text-purple-300 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
                   <span class="text-gray-200">Advanced courses access</span>
-                </li>
-                <li class="flex items-center">
+        </li>
+        <li class="flex items-center">
                   <svg class="w-5 h-5 text-purple-300 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
                   <span class="text-gray-200">Priority support</span>
-                </li>
-              </ul>
+        </li>
+      </ul>
               <button
                 class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/25">
-                Starting soon..
-              </button>
-            </div>
+        Starting soon..
+      </button>
+    </div>
 
-            <!-- Enterprise Plan -->
+    <!-- Enterprise Plan -->
             <div
               class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl p-8 border border-gray-700 transform hover:-translate-y-2 transition-all duration-300 hover:border-green-500/50 hover:shadow-xl hover:shadow-green-500/10 animate__animated animate__fadeInUp"
               style="animation-delay: 0.4s">
-              <div class="text-center">
+      <div class="text-center">
                 <h3 class="text-2xl font-bold text-white mb-3">Enterprise</h3>
                 <div class="text-green-400 text-sm font-semibold mb-6">For teams & organizations</div>
                 <div class="text-4xl font-bold text-white mb-6">
                   Custom<span class="text-gray-400 text-base font-normal block mt-1">per month</span>
-                </div>
-              </div>
-              <ul class="space-y-4 mb-8">
-                <li class="flex items-center">
+        </div>
+      </div>
+      <ul class="space-y-4 mb-8">
+        <li class="flex items-center">
                   <svg class="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
                   <span class="text-gray-300">All Pro features</span>
-                </li>
-                <li class="flex items-center">
+        </li>
+        <li class="flex items-center">
                   <svg class="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
                   <span class="text-gray-300">Custom learning paths</span>
-                </li>
-                <li class="flex items-center">
+        </li>
+        <li class="flex items-center">
                   <svg class="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
                   <span class="text-gray-300">Dedicated success manager</span>
-                </li>
-                <li class="flex items-center">
+        </li>
+        <li class="flex items-center">
                   <svg class="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
                   <span class="text-gray-300">API access</span>
-                </li>
-              </ul>
+        </li>
+      </ul>
               <a href="#contact"
                 class="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/25 block text-center">
-                Contact Sales
+        Contact Sales
               </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
-  </htmlcode>
+  </div>
+</div>
+  </section>
+</div>
+</htmlcode>
 </element>
 <element id="ab5dc08f-39dc-441f-8e22-afecdea49e93" data-section-id="ab5dc08f-39dc-441f-8e22-afecdea49e93">
 
-  <element id="1116e781-d109-4f7b-8e07-0e0824137912" data-section-id="1116e781-d109-4f7b-8e07-0e0824137912">
+<element id="1116e781-d109-4f7b-8e07-0e0824137912" data-section-id="1116e781-d109-4f7b-8e07-0e0824137912">
 
 
-    <htmlcode id="el-h0op1k3c">
-      <div id="root">
+<htmlcode id="el-h0op1k3c">
+<div id="root">
         <section id="contact"
           class="py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
           <!-- Background decorative elements -->
@@ -1398,40 +1426,40 @@
           </div>
 
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" id="el-jhgp6qhn">
-            <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-fbmr26qf">
+      <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-fbmr26qf">
               <h2 class="text-4xl font-bold text-white mb-4" id="el-4jr9x9ij">Get in Touch</h2>
               <p class="text-xl text-gray-300" id="el-dlyofem8">Have questions? We'd love to hear from you.</p>
-            </div>
+      </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12" id="el-0snpqu18">
-              <!-- Contact Form -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12" id="el-0snpqu18">
+        <!-- Contact Form -->
               <div
                 class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-xl rounded-2xl shadow-2xl p-8 border border-gray-700/50 animate__animated animate__fadeInLeft"
                 id="el-jy5c4av2">
-                <form id="contactForm" class="space-y-6">
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="el-mpexvcjv">
-                    <div id="el-d929tqt4">
+          <form id="contactForm" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="el-mpexvcjv">
+              <div id="el-d929tqt4">
                       <label for="firstName" class="block text-sm font-medium text-gray-300 mb-2" id="el-jlfvur0m">First
                         Name</label>
                       <input type="text" id="firstName" name="firstName" required=""
                         class="w-full px-4 py-3 rounded-xl border border-gray-600 bg-gray-800/50 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 backdrop-blur-sm">
-                    </div>
-                    <div id="el-pyj6bh82">
+              </div>
+              <div id="el-pyj6bh82">
                       <label for="lastName" class="block text-sm font-medium text-gray-300 mb-2" id="el-2x4jant0">Last
                         Name</label>
                       <input type="text" id="lastName" name="lastName" required=""
                         class="w-full px-4 py-3 rounded-xl border border-gray-600 bg-gray-800/50 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 backdrop-blur-sm">
-                    </div>
-                  </div>
+              </div>
+            </div>
 
-                  <div id="el-rtemnzxl">
+            <div id="el-rtemnzxl">
                     <label for="email" class="block text-sm font-medium text-gray-300 mb-2" id="el-crcfqwqx">Email
                       Address</label>
                     <input type="email" id="email" name="email" required=""
                       class="w-full px-4 py-3 rounded-xl border border-gray-600 bg-gray-800/50 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 backdrop-blur-sm">
-                  </div>
+            </div>
 
-                  <div id="el-cfkj6joi">
+            <div id="el-cfkj6joi">
                     <label for="subject" class="block text-sm font-medium text-gray-300 mb-2"
                       id="el-52u4ad06">Subject</label>
                     <select id="subject" name="subject" required=""
@@ -1441,30 +1469,30 @@
                       <option value="support" id="el-gpq4yb32" class="bg-gray-800">Technical Support</option>
                       <option value="billing" id="el-8x0r03td" class="bg-gray-800">Billing Question</option>
                       <option value="partnership" id="el-xph2hz4w" class="bg-gray-800">Partnership Opportunity</option>
-                    </select>
-                  </div>
+              </select>
+            </div>
 
-                  <div id="el-4c46cytb">
+            <div id="el-4c46cytb">
                     <label for="message" class="block text-sm font-medium text-gray-300 mb-2"
                       id="el-cqir610v">Message</label>
                     <textarea id="message" name="message" rows="4" required=""
                       class="w-full px-4 py-3 rounded-xl border border-gray-600 bg-gray-800/50 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 backdrop-blur-sm"></textarea>
-                  </div>
+            </div>
 
                   <button type="submit"
                     class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25"
                     id="el-u0ixqypt">
-                    Send Message
-                  </button>
-                </form>
-              </div>
-              <!-- Contact Information -->
-              <div class="flex flex-col justify-between animate__animated animate__fadeInRight" id="el-2y6qjd2v">
+              Send Message
+            </button>
+          </form>
+        </div>
+        <!-- Contact Information -->
+        <div class="flex flex-col justify-between animate__animated animate__fadeInRight" id="el-2y6qjd2v">
                 <div
                   class="bg-gradient-to-br from-emerald-800 to-emerald-900 text-white rounded-2xl p-8 shadow-2xl mb-6 border border-emerald-700/50 hover:border-emerald-500/50 transition-all duration-300"
                   id="el-usuvo3wt">
                   <h3 class="text-2xl font-bold mb-6 text-emerald-100">
-                    For Business Queries:
+      For Business Queries:
                     <br><span class="text-white">Contact Information</span>
                   </h3>
                   <div class="space-y-6">
@@ -1476,8 +1504,8 @@
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
                           </path>
-                        </svg>
-                      </div>
+        </svg>
+      </div>
                       <span class="text-emerald-100 font-medium">+91-89175 64117</span>
                     </div>
                     <div
@@ -1488,8 +1516,8 @@
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
                           </path>
-                        </svg>
-                      </div>
+        </svg>
+      </div>
                       <span class="text-emerald-100 font-medium">support@mentiby.com</span>
                     </div>
                     <div
@@ -1502,21 +1530,21 @@
                           </path>
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                        </svg>
+        </svg>
                       </div>
                       <span class="text-emerald-100 font-medium leading-relaxed">
                         3-127 Chinnaveedhi, Ayyannapeta<br>
                         Chinnavedhi Stage, VTC:Kanapaka<br>
-                        Vizianagaram, Andhra Pradesh, 535003</span>
-                    </div>
-                  </div>
-                </div>
+          Vizianagaram, Andhra Pradesh, 535003</span>
+      </div>
+    </div>
+  </div>
 
                 <div
                   class="bg-gradient-to-br from-emerald-800 to-emerald-900 text-white rounded-2xl p-8 shadow-2xl border border-emerald-700/50 hover:border-emerald-500/50 transition-all duration-300"
                   id="el-hr6ltylu">
                   <h3 class="text-2xl font-bold mb-6 text-emerald-100" id="el-cf52jf4v">Follow Us</h3>
-                  <div class="flex space-x-4" id="el-mevgdi6n">
+    <div class="flex space-x-4" id="el-mevgdi6n">
                     <a href="https://in.linkedin.com/company/menti-by" class="group" id="el-vyjuf6ta">
                       <div
                         class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-110">
@@ -1524,7 +1552,7 @@
                           <path
                             d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
                             id="el-mafwrcky"></path>
-                        </svg>
+        </svg>
                       </div>
                     </a>
                     <a href="#" class="group" id="el-9ppd3z9q">
@@ -1534,7 +1562,7 @@
                           <path
                             d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
                             id="el-luam5uvm"></path>
-                        </svg>
+        </svg>
                       </div>
                     </a>
                     <a href="https://www.instagram.com/accounts/login/?next=%2Fmentiby.official%2F&source=omni_redirect"
@@ -1544,31 +1572,31 @@
                         <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                           <path
                             d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5c0 3.3-2.45 5.75-5.75 5.75h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm8.5 1.5h-8.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zM12 7.25a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5zm0 1.5a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5zm5.5-2.45a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z" />
-                        </svg>
+        </svg>
                       </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <script>
-          document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            // Add your form submission logic here
-            alert('Thank you for your message. We will get back to you soon!');
-            this.reset();
-          });
-        </script>
+      </a>
+    </div>
+  </div>
+</div>
       </div>
-    </htmlcode>
+    </div>
+  </section>
+
+  <script>
+          document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      // Add your form submission logic here
+      alert('Thank you for your message. We will get back to you soon!');
+      this.reset();
+    });
+  </script>
+</div>
+</htmlcode>
   </element>
   <element id="595b9087-0b2f-4ade-b6c7-d9f2d779dae5" data-section-id="595b9087-0b2f-4ade-b6c7-d9f2d779dae5">
 
-    <htmlCode>
-      <div id="root">
+<htmlCode>
+<div id="root">
         <footer id="footer"
           class="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white pt-20 pb-10 relative overflow-hidden">
           <!-- Background decorative elements -->
@@ -1581,24 +1609,24 @@
           </div>
 
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-              <!-- Company Info -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <!-- Company Info -->
               <div class="space-y-6 animate__animated animate__fadeInUp">
-                <div class="flex items-center">
+          <div class="flex items-center">
                   <span
                     class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">Menti</span>
                   <span class="text-3xl font-bold text-white">BY</span>
-                </div>
+          </div>
                 <p class="text-gray-400 leading-relaxed">Transforming education through AI-powered personalized learning
                   experiences that adapt to your unique journey.</p>
-                <div class="flex space-x-4">
+          <div class="flex space-x-4">
                   <a href="https://in.linkedin.com/company/menti-by" class="group">
                     <div
                       class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-6">
                       <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path
                           d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                      </svg>
+              </svg>
                     </div>
                   </a>
                   <a href="#" class="group">
@@ -1607,7 +1635,7 @@
                       <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path
                           d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-                      </svg>
+              </svg>
                     </div>
                   </a>
                   <a href="https://www.instagram.com/accounts/login/?next=%2Fmentiby.official%2F&source=omni_redirect"
@@ -1617,16 +1645,16 @@
                       <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path
                           d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5c0 3.3-2.45 5.75-5.75 5.75h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm8.5 1.5h-8.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zM12 7.25a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5zm0 1.5a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5zm5.5-2.45a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z" />
-                      </svg>
+              </svg>
                     </div>
-                  </a>
-                </div>
-              </div>
+            </a>
+          </div>
+        </div>
 
-              <!-- Quick Links -->
+        <!-- Quick Links -->
               <div class="animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
                 <h3 class="text-xl font-semibold mb-6 text-white">Quick Links</h3>
-                <ul class="space-y-4">
+          <ul class="space-y-4">
                   <li><a href="#features"
                       class="text-gray-400 hover:text-blue-400 transition-all duration-300 hover:translate-x-2 flex items-center group">
                       <span
@@ -1657,13 +1685,13 @@
                         class="w-2 h-2 bg-pink-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-all duration-300"></span>
                       Our Team
                     </a></li>
-                </ul>
-              </div>
+          </ul>
+        </div>
 
-              <!-- Resources -->
+        <!-- Resources -->
               <div class="animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
                 <h3 class="text-xl font-semibold mb-6 text-white">Resources</h3>
-                <ul class="space-y-4">
+          <ul class="space-y-4">
                   <li><a href="#"
                       class="text-gray-400 hover:text-blue-400 transition-all duration-300 hover:translate-x-2 flex items-center group">
                       <span
@@ -1694,28 +1722,28 @@
                         class="w-2 h-2 bg-pink-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-all duration-300"></span>
                       Community
                     </a></li>
-                </ul>
-              </div>
+          </ul>
+        </div>
 
-              <!-- Newsletter -->
+        <!-- Newsletter -->
               <div class="animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
                 <h3 class="text-xl font-semibold mb-6 text-white">Stay Updated</h3>
                 <p class="text-gray-400 mb-6 leading-relaxed">Subscribe to our newsletter for the latest updates and
                   exclusive content.</p>
-                <form class="space-y-4">
+          <form class="space-y-4">
                   <div class="relative">
                     <input type="email" placeholder="Enter your email"
                       class="w-full px-4 py-3 rounded-xl bg-gray-800/50 border border-gray-600 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 backdrop-blur-sm">
-                  </div>
+            </div>
                   <button type="submit"
                     class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25">
-                    Subscribe
-                  </button>
-                </form>
-              </div>
-            </div>
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
 
-            <!-- Bottom Footer -->
+      <!-- Bottom Footer -->
             <div class="border-t border-gray-800/50 pt-8">
               <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                 <p class="text-gray-400 text-sm">
@@ -1731,29 +1759,29 @@
                   <a href="#"
                     class="text-gray-400 hover:text-green-400 text-sm transition-all duration-300 hover:underline">Cookie
                     Policy</a>
-                </div>
-              </div>
-            </div>
           </div>
-        </footer>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-        <script>
+  <script>
           document.querySelector('footer form').addEventListener('submit', function (e) {
-            e.preventDefault();
+      e.preventDefault();
             const email = this.querySelector('input[type="email"]').value;
             if (email) {
-              alert('Thank you for subscribing to our newsletter!');
-              this.reset();
+      alert('Thank you for subscribing to our newsletter!');
+      this.reset();
             }
-          });
-        </script>
-      </div>
+    });
+  </script>
+</div>
     </htmlCode>
   </element>
-  <div id="page_complete">
-    <script>
-      console.log('Page complete');
-    </script>
-    </body>
-
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+          
     </html>
