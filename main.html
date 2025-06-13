@@ -40,8 +40,8 @@
   <script>
     // Top Banner Variable Function
     document.addEventListener("DOMContentLoaded", function () {
-    const cohortInfoSpan = document.getElementById("cohortInfo");
-    cohortInfoSpan.innerHTML = `🚀 <strong>${upcomingCohortType}</strong><strong> Cohort </strong><strong>${upcomingCohortNum}</strong> starting from <strong>${upcomingCohortDate}</strong>`;
+      const cohortInfoSpan = document.getElementById("cohortInfo");
+      cohortInfoSpan.innerHTML = `🚀 <strong>${upcomingCohortType}</strong><strong> Cohort </strong><strong>${upcomingCohortNum}</strong> starting from <strong>${upcomingCohortDate}</strong>`;
     });
 
     function goToCohort() {
@@ -591,7 +591,7 @@
 
           // Update on window resize
           window.addEventListener('resize', updateMobileMenuPosition);
-          
+
           // Initial position update
           updateMobileMenuPosition();
 
@@ -1152,7 +1152,8 @@
 
           <!-- Tab Navigation -->
           <div class="flex justify-center mb-12">
-            <div class="bg-gray-800/50 backdrop-blur-xl rounded-2xl p-2 border border-gray-700/50 flex flex-col sm:flex-row w-full max-w-md mx-auto">
+            <div
+              class="bg-gray-800/50 backdrop-blur-xl rounded-2xl p-2 border border-gray-700/50 flex flex-col sm:flex-row w-full max-w-md mx-auto">
               <button id="basic-tab"
                 class="tab-btn active px-8 py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg mb-2 sm:mb-0">
                 MentiBY Basic
@@ -1705,7 +1706,7 @@
         opacity: 0;
         pointer-events: none;
       }
-      
+
       /* Course tab responsive styles */
       @media (max-width: 640px) {
         .tab-btn {
@@ -2082,7 +2083,7 @@
               </ul>
               <button onclick="goToPlacementCohort()"
                 class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/25">
-                Join the Queue
+                Get Started
               </button>
             </div>
 
@@ -2477,19 +2478,15 @@
             <!-- Bottom Footer -->
             <div class="border-t border-gray-800/50 pt-8">
               <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                <p class="text-gray-400 text-sm">
-                  © 2025 <span class="text-white font-semibold">MentiBY</span>. All rights reserved.
-                </p>
-                <div class="flex space-x-8">
-                  <a href="#"
-                    class="text-gray-400 hover:text-blue-400 text-sm transition-all duration-300 hover:underline">Privacy
-                    Policy</a>
-                  <a href="#"
-                    class="text-gray-400 hover:text-purple-400 text-sm transition-all duration-300 hover:underline">Terms
-                    of Service</a>
-                  <a href="#"
-                    class="text-gray-400 hover:text-green-400 text-sm transition-all duration-300 hover:underline">Cookie
-                    Policy</a>
+                <div class="flex flex-col md:flex-row justify-between items-center w-full">
+                  <p class="text-gray-400 text-sm whitespace-nowrap">
+                    © 2025 <span class="text-white font-semibold">MentiBY</span>. All rights reserved.
+                  </p>
+                  <div class="flex items-center space-x-1 text-xs md:text-sm mt-2 md:mt-0">
+                    <span
+                      class="font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent ml-1">techSas</span>
+                    <span class="text-xl align-middle" style="line-height:1;">❤️</span>
+                  </div>
                 </div>
               </div>
             </div>

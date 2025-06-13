@@ -1,7 +1,7 @@
 // main.js
 
 // Top Banner Variables
-const upcomingCohortType = 'Basic';             // Basic or Placement - Important Section
+const upcomingCohortType = 'Basic';             // Basic or Placement - Sensitive Section
 const upcomingCohortNum = '3.0';                // 3.0 or 4.0
 const upcomingCohortDate = 'July - 01';         // Date in format of Month - Day
 
